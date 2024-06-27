@@ -7,7 +7,7 @@ def main():
     Code Your Program here
     ########################################
     """
-    if(num1 < num2 and num2 < num3):
+    if(num1 < num2 and num1 < num3):
         minval = num1
         if(num2 < num3):
             median = num2
@@ -15,6 +15,15 @@ def main():
         else:
             median = num3
             maxval = num2
+    elif(num2 < num1 and num2 < num3):
+        minval = num2
+        if(num1 < num3):
+            median = num1
+            maxval = num3
+        else:
+            median = num3
+            maxval = num1
+        
             
 
     print(minval, median, maxval)
