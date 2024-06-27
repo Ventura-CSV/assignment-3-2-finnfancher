@@ -23,6 +23,14 @@ def main():
         else:
             median = num3
             maxval = num1
+    else:
+        minval = num3
+        if(num1 < num2):
+            median = num1
+            maxval = num2
+        else:
+            median = num2
+            maxval = num1
         
             
 
